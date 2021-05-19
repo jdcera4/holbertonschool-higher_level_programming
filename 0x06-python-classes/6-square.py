@@ -13,6 +13,7 @@ class Square:
     def size(self):
         """Initializes the data"""
         return self.__size
+
     @property
     def position(self):
         """Initializes the data"""
@@ -28,6 +29,7 @@ class Square:
                 self.__size = size
         else:
             raise TypeError("size must be an integer")
+
     @position.setter
     def position(self, value):
         """stter position"""
@@ -54,8 +56,9 @@ class Square:
 
         for row in range(self.__size):
             if self.__position[0] > 0:
-               for row in range(self.__position[0]):
-                   print(" ", end="")
-               for columns in range(self.__size):
+
+                for row in range(self.__position[0]):
+                    print(" ", end="")
+                for columns in range(self.__size):
                     print("#", end="")
-               print("")
+                print("")
