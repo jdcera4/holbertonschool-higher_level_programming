@@ -13,7 +13,7 @@ class Rectangle:
     def width(self):
         """Initializes the data"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """setter of width, for create the conditionals"""
@@ -24,12 +24,12 @@ class Rectangle:
                 self.__width = value
         else:
             raise TypeError("width must be an integer")
-    
+
     @property
     def height(self):
         """Initializes the data"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """setter of width, for create the conditionals"""
