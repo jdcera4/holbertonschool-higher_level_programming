@@ -53,6 +53,10 @@ class Rectangle:
             return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
+        """Prints a string representation of a rectangle with #"""
+
+        if self.__width == 0 or self.__height == 0:
+            return ""
         cont = ""
         for row in range(self.__height):
             for columns in range(self.__width):
