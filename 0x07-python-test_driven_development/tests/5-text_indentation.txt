@@ -1,12 +1,10 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
+>>> doc_module =   __import__("5-text_indentation").__doc__
+>>> len(doc_module.splitlines()) > 0
+True
+
 >>> text = "Hello. Hi how's it going today? Neat!"
->>> text_indentation(text)
-Hello.
-<BLANKLINE>
-Hi how's it going today?
-<BLANKLINE>
-Neat!
 
 >>> text_indentation(5)
 Traceback (most recent call last):
