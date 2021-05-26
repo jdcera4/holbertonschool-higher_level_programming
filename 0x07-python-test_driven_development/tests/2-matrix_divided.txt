@@ -2,6 +2,7 @@
 
 >>> doc_module =   __import__("2-matrix_divided").__doc__
 >>> len(doc_module.splitlines()) > 0
+True
 
 >>> matrix = [[2, 4, 6], [8, 10, 12]]
 >>> matrix_divided(matrix, 2)
