@@ -1,0 +1,24 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> doc_module =   __import__("0-add_integer").__doc__
+>>> len(doc_module.splitlines()) > 0
+True
+>>> add_integer(2, 3)
+5
+>>> add_integer('hola', 6)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>> add_integer(6, 'hola')
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+>>> add_integer(2.4, 3)
+5
+>>> add_integer(4, 2.2)
+6
+>>> add_integer(4.2, 2.2)
+6
+>>> add_integer(2)
+100
+>>> add_integer(-2, 2)
+0

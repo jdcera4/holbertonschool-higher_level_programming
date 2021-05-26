@@ -1,0 +1,31 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text = "Hello. Hi how's it going today? Neat!"
+>>> text_indentation(text)
+Hello.
+<BLANKLINE>
+Hi how's it going today?
+<BLANKLINE>
+Neat!
+
+>>> text_indentation(5)
+Traceback (most recent call last):
+   	...
+TypeError: text must be a string
+
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+
+>>> text_indentation(".")
+.
+<BLANKLINE>
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+   	...
+TypeError: text must be a string
