@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-
+"""Script div matriz"""
 
 
 def matrix_divided(matrix, div):
-
+    """function print div matriz"""
     row_check = 0
 
     if not any(matrix):
