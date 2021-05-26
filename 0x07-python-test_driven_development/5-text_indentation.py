@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """script print text"""
 
+
 def text_indentation(text):
     """function print text"""
     flag = 0
