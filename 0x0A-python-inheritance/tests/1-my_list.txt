@@ -1,0 +1,58 @@
+MyList = __import__('1-my_list').MyList
+
+>>> doc_module =   __import__("1-my_list").__doc__
+>>> len(doc_module.splitlines()) > 0
+True
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+
+>>> my_list = MyList()
+>>> my_list.append(6)
+>>> my_list.append(6)
+>>> my_list.append(6)
+>>> my_list.append(6)
+>>> my_list.append(6)
+>>> my_list.print_sorted()
+[6, 6, 6, 6, 6]
+
+>>> my_list = MyList()
+>>> my_list.append(6)
+>>> my_list.append(6)
+>>> my_list.append(6)
+>>> my_list.append(6)
+>>> my_list.append(6)
+>>> my_list.print_sorted(5)
+Traceback (most recent call last):
+    ...
+TypeError: print_sorted() takes 1 positional argument but 2 were given
+
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(-4)
+>>> my_list.append(2)
+>>> my_list.append(-3)
+>>> my_list.append(5)
+>>> my_list.print_sorted()
+[-4, -3, 1, 2, 5]
+
+If a list is already ordered:
+  >>> my_list = MyList()
+  >>> my_list.append(1)
+  >>> my_list.append(2)
+  >>> my_list.append(3)
+  >>> my_list.append(4)
+  >>> my_list.append(5)
+  >>> my_list.print_sorted()
+  [1, 2, 3, 4, 5]
