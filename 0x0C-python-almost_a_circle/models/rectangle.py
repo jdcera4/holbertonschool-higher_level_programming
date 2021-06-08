@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 """class rectangule """
+
+
 from models.base import Base
 
 
 class Rectangle(Base):
     """Reactangule"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """constructor"""
         self.width = width
         self.height = height
         self.x = x
@@ -14,10 +17,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """ property widht"""
         return self._width
 
     @width.setter
     def width(self, value):
+        """setter widdth"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -98,11 +103,13 @@ class Rectangle(Base):
             print("")
 
     def __str__(self):
+        """str"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self._x,
                                                         self._y, self._width,
                                                         self._height))
 
     def update(self, *args, **kwargs):
+        """update"""
         attrubutes = ["id", "width", "height", "x", "y"]
         for elem in range(len(args)):
             for attr in range(len(attrubutes)):
