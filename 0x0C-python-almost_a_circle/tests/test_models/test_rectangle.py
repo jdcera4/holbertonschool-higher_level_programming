@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Unittest foralmost a circle / Rectangle
 """
+
+
 import unittest
 import io
 import sys
@@ -8,6 +10,8 @@ import os
 import models.rectangle
 from models.rectangle import Rectangle
 from models.base import Base
+
+
 class Test_Rectangle_Requeriments(unittest.TestCase):
     """Class to test the Rectangle class requeriments"""
     # Testing pep8 and shebang
