@@ -122,3 +122,7 @@ class Rectangle(Base):
                 for attr in range(len(attrubutes)):
                     if key == attrubutes[attr]:
                         setattr(self, attrubutes[attr], val)
+
+    def to_dictionary(self):
+        """dictionary"""
+        
