@@ -28,3 +28,34 @@ class TestSquare(unittest.TestCase):
         self.assertTrue(self.s2)
         self.assertTrue(self.s3)
         self.assertTrue(self.s4)
+
+    def test_10_01_subclass(self):
+        """Checks if Square is a subclass of Rectangle and Base"""
+
+        self.assertTrue(issubclass(Square, Rectangle))
+        self.assertTrue(issubclass(Square, Base))
+
+    def test_10_02_check_attrs(self):
+        """Check if the attributes of Square are set appropriately"""
+
+        self.assertEqual(self.s4.width, 3)
+        self.assertEqual(self.s4.height, 3)
+        self.assertEqual(self.s4.x, 1)
+        self.assertEqual(self.s4.y, 2)
+
+    def test_10_03_area(self):
+        """Makes sure the area method works"""
+
+        self.assertEqual(self.s1.area(), 25)
+        self.assertEqual(self.s2.area(), 49)
+        self.assertEqual(self.s3.area(), 4)
+        self.assertEqual(self.s4.area(), 9)
+
+    def test_10_04_display(self):
+        """Makes sure the display method works"""
+
+        f = io.StringIO()
+        with contextlib.redirect_stdout(f):
+            self.s4.display()
+        s = f.getvalue()
+        self.assertEqual(s, "\n\n ###\n ###\n ###\n")
