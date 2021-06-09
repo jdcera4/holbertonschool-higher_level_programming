@@ -122,3 +122,11 @@ class Rectangle(Base):
                 for attr in range(len(attrubutes)):
                     if key == attrubutes[attr]:
                         setattr(self, attrubutes[attr], val)
+
+    def to_dictionary(self):
+        """Returns a dictionary representation of Rectangle"""
+
+        c = {"id": self.id, "width": self.__width, "height": self.__height,
+             "x": self.__x, "y": self.__y}
+
+        return c
