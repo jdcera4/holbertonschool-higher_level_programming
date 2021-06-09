@@ -33,7 +33,7 @@ class Rectangle(Base):
     def height(self):
         """Returns height as a private attribute"""
 
-        return self.__height
+        return self._height
 
     @height.setter
     def height(self, value):
@@ -87,6 +87,7 @@ class Rectangle(Base):
         self._y = value
 
     def area(self):
+        """return area """
         return self._width * self._height
 
     def display(self):
@@ -115,7 +116,7 @@ class Rectangle(Base):
             for attr in range(len(attrubutes)):
                 if attr == elem:
                     setattr(self, attrubutes[attr], args[elem])
-        
+
         if not args or len(args) == 0:
             for key, val in kwargs.items():
                 for attr in range(len(attrubutes)):
