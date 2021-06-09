@@ -124,5 +124,4 @@ class Rectangle(Base):
                         setattr(self, attrubutes[attr], val)
 
     def to_dictionary(self):
-        """dictionary"""
-        
+        """Return a dictionary of a Rectangle"""
