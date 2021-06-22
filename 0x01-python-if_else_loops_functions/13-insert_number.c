@@ -40,7 +40,7 @@ listint_t *insert_node(listint_t **head, int number)
 		aux = lastNode;
 		lastNode = lastNode->next;
 	}
-	if (lastNode != NULL)
+	if (lastNode->next != NULL)
 	{
 		newNode->next = lastNode;
 		aux->next = newNode;
