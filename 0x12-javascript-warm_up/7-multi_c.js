@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // prints x times “C is fun”
-const text = 'C is fun'
+const text = 'C is fun';
 if (isNaN(process.argv[2])) {
   console.log();
 } else {
