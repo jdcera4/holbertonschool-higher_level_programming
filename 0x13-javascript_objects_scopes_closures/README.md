@@ -1,4 +1,7 @@
 <h1 class="gap">0x13. JavaScript - Objects, Scopes and Closures</h1>
+
+<p><img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/303/Javascript-535.png.jpeg" alt="" style=""></p>
+
 <div class="gap" id="project-description">
   <h2>Resources</h2>
 
