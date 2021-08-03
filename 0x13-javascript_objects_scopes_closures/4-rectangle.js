@@ -7,7 +7,7 @@ class Rectangle {
       }
     }
     print () {
-        for (let cont = 0; cont > this.height; cont++) {
+        for (let cont = 0; cont < this.height; cont++) {
             console.log('X'.repeat(this.width));
         }
     }
@@ -15,12 +15,12 @@ class Rectangle {
         const aux = this.width;
         this.width = this.height;
         this.height = aux;
-      }
+    }
     
-      double () {
+    double () {
         this.width *= 2;
         this.height *= 2;
-      }
-  }
-  module.exports = Rectangle;
+    }
+}
+module.exports = Rectangle;
   
