@@ -11,7 +11,7 @@ if __name__ == "__main__":
                                 passwd=argv[2], db=argv[3], charset="utf8")
     cur = conn.cursor()
     # HERE I have to know SQL to grab all states in my database
-    cur.execute("SELECT * FROM states where name regexp '^N.' ORDER BY id ASC")
+    cur.execute("SELECT * FROM states where name LIKE BINARY 'N%' ORDER BY id ASC")
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
