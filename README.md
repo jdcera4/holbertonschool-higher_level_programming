@@ -1,10 +1,7 @@
 # Holberton School System Engineering & DevOps Track
 
 ## Description
-At Holberton School, we learn by doing. We have projects everyday that we have to push on GitHub in order for an automatic review to be done.
-This repository contains directories each corresponding to a system engineering or DevOps project.
-These projects are part of the Holberton School year 1 curriculum.
-In these projects, we cover everything from the basics of the Linux Shell, Bash commands, Bash scripting, networking, APIs, and web-stack debugging to more advanced topics.
+At Holberton School, we learn by doing. We have projects every day that we have to push on GitHub for an automatic review to take place. This repository contains directories, each of which corresponds to a Python project. These projects are part of the Holberton School Year 1 curriculum. In these projects, we cover everything from python basics to object-oriented programming.
 
 ## Table of contents
 Directories | Description
